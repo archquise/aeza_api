@@ -132,12 +132,16 @@ class AuthAeza():
         )
         servers: dict = json.loads(responce.text)['data']['items']
         for i in servers:
-            all_server[i['name']] = {'status': i['status'],
-                                     'ip': i['ip'],
-                                     'username': i['parameters']['username'],
-                                     'password': i['secureParameters']['data']['password'],
-                                     'type': i['product']['type']
-                                     }
+            try:
+                all_server[i['name']] = {'status': i['status'],
+                                        'ip': i['ip'],
+                                        'username': i['parameters']['username'],
+                                        'password': i['secureParameters']['data']['password'],
+                                        'type': i['product']['type'],
+                                        'id': i['id']
+                                        }
+            except:
+                ...
         return all_server
 
     def get_product(self) -> dict:
