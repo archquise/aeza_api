@@ -1,27 +1,14 @@
-# AezaAPI
+# Aeza API
 
 ### Описание
-Библиотека для использования API сервиса Aeza
+Пакет предназначенный для получения легкого доступа к API Aeza в ваших проектах
 
 ### Методы
-
-- <b>get_balance</b> - Узнать баланс
-- <b>invoice_card</b> - Пополнить баланс картой
-- <b>invoice_qiwi</b> - Пополнить баланс через Qiwi
-- <b>status_server</b> - Статус серверов
-- <b>add_api_key</b> - Создание API-ключа
-- <b>get_api_key</b> - Получение списка API-ключей
-- <b>add_ssh_key</b> - Добавление SSH-ключа
-- <b>get_ssh_key</b> - Получение списка SSH-ключей
-- <b>get_my_server</b> - Получение информации приобретённых серверов
-- <b>get_product</b> - Получение списка продуктов
-- <b>get_total_product</b> - Количество продуктов
-- <b>ordering_service</b> - Покупка сервера
-
+#TODO
 ### Примеры
 
 ```python
-from ApiAeza import aeza
+from aeza_api import aeza
 
 TOKEN = aeza.AuthAeza('API-KEY')
 
@@ -39,7 +26,7 @@ def test() -> str:
 <b>Покупка сервера</b>
 
 ```python
-from ApiAeza import aeza
+from aeza_api import aeza
 
 TOKEN = aeza.AuthAeza('API-KEY')
 
@@ -58,10 +45,10 @@ def test() -> str:
 
 Для начала работы импортируйте библиотеку, предварительно установив её
 ```
-pip install ApiAeza
+pip install aeza_api
 ```
 ```python
-from ApiAeza import aeza
+from aeza_api import aeza
 ```
 Далее инициализируйте API-ключ
 ```python
