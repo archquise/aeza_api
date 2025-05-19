@@ -7,13 +7,13 @@ def readme():
 
 
 setup(
-    name='AezaAPI',
-    version='1.0.2',
-    author='blxssd',
-    description='AezaAPI module',
+    name='aeza_api',
+    version='1.1.0',
+    author='Archquise',
+    description='Package intented to provide easy access to Aeza API in your projects',
     long_description=readme(),
     long_description_content_type='text/markdown',
-    url='https://github.com/BlxssdCoder/AezaAPI',
+    url='https://github.com/archquise/aeza_api',
     packages=find_packages(),
     install_requires=['requests>=2.25.1'],
     classifiers=[
